@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives | ľ����</title>
+  <title>输出一个六芒星 | ľ����</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python�����桢Web����">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ľ����">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="main123456789101112131415161718192021222324252627282930313233#case1list=[15,5,20,25,30,12,25]#把数组中地第一个元素赋值给变量temptemp=list[0]#通过一个for循环使temp变量和数组中的每个元素都比较，找出最大的元素并赋值给temp并输出for i in range(len(list)):">
+<meta name="keywords" content="Python�����桢Web����">
+<meta property="og:type" content="article">
+<meta property="og:title" content="输出一个六芒星">
+<meta property="og:url" content="http://yoursite.com/2018/07/13/冒泡排序法求最大值/index.html">
 <meta property="og:site_name" content="ľ����">
+<meta property="og:description" content="main123456789101112131415161718192021222324252627282930313233#case1list=[15,5,20,25,30,12,25]#把数组中地第一个元素赋值给变量temptemp=list[0]#通过一个for循环使temp变量和数组中的每个元素都比较，找出最大的元素并赋值给temp并输出for i in range(len(list)):">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-13T08:40:08.530Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ľ����">
+<meta name="twitter:title" content="输出一个六芒星">
+<meta name="twitter:description" content="main123456789101112131415161718192021222324252627282930313233#case1list=[15,5,20,25,30,12,25]#把数组中地第一个元素赋值给变量temptemp=list[0]#通过一个for循环使temp变量和数组中的每个元素都比较，找出最大的元素并赋值给temp并输出for i in range(len(list)):">
   
     <link rel="alternative" href="/atom.xml" title="ľ����" type="application/atom+xml">
   
@@ -151,184 +155,157 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-冒泡排序法求最大值" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      输出一个六芒星
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/冒泡排序法求最大值/" class="archive-article-date">
+
+        
+        <a href="/2018/07/13/冒泡排序法求最大值/" class="archive-article-date">
   	<time datetime="2018-07-13T08:20:25.347Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/冒泡排序法求最大值/">输出一个六芒星</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="main"><a href="#main" class="headerlink" title="main"></a>main</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#case1</span></span><br><span class="line">list=[15,5,20,25,30,12,25]</span><br><span class="line"><span class="comment">#把数组中地第一个元素赋值给变量temp</span></span><br><span class="line">temp=list[0]</span><br><span class="line"><span class="comment">#通过一个for循环使temp变量和数组中的每个元素都比较，找出最大的元素并赋值给temp并输出</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(list)):</span><br><span class="line">    <span class="keyword">if</span> temp&lt;list[i]:</span><br><span class="line">        temp=list[i]</span><br><span class="line"><span class="built_in">print</span>(temp)</span><br><span class="line"><span class="comment">#case2</span></span><br><span class="line">list=[15,5,50,20,25,30,12,25]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(len(list)):</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(0,len(list)-1):</span><br><span class="line">    <span class="comment">#从数组的第一个元素启，总共执行i*（i-1）次循环</span></span><br><span class="line">        <span class="keyword">if</span> list[j]&lt;list[j+1]:</span><br><span class="line">            temp=list[j]</span><br><span class="line">            list[j]=list[j+1]</span><br><span class="line">            list[j+1]=temp</span><br><span class="line">            <span class="comment">#将元素大的位置换到前面</span></span><br><span class="line"><span class="built_in">print</span>(list[0])</span><br><span class="line"><span class="comment">#case3</span></span><br><span class="line">list1=[15,5,50,20,25,30,12,25,51,52,53,46]</span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,len(list1)):</span><br><span class="line">    <span class="keyword">if</span> list1[i]&lt;list1[i-1]:</span><br><span class="line">        b=list1[i-1]</span><br><span class="line">        <span class="comment">#通过变量b储存较大的值</span></span><br><span class="line">        <span class="comment">#通过for循环将每个元素依次比较</span></span><br><span class="line">        list1[i]=list1[i-1]</span><br><span class="line">        <span class="comment">#把大的元素放在后面</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        b=list1[i]</span><br><span class="line">     <span class="comment">#若后一个元素大于前一个，将后一个元素赋值给变量b</span></span><br><span class="line"><span class="built_in">print</span>(b)</span><br></pre></td></tr></table></figure>
+<h2 id="information"><a href="#information" class="headerlink" title="information"></a>information</h2><p>that’s all,it is the way of geting the maxmium。If you want to get the minmium,please change the sign(&lt;==&gt;)。</p>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/13/冒泡排序法求最大值/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/输出1-100中所有的质数/" class="archive-article-date">
-  	<time datetime="2018-07-13T01:57:24.739Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/13/输出1-100中所有的质数/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">Hello World</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/输出1-100中所有的质数/">Hello World</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/查找0-100中某个数的个数/" class="archive-article-date">
-  	<time datetime="2018-07-13T01:04:58.061Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/查找0-100中某个数的个数/">查找0-100中某位数的数目</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/格式化输出六芒星/" class="archive-article-date">
-  	<time datetime="2018-07-12T13:11:43.067Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/格式化输出六芒星/">输出一个六芒星</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/12/if嵌套语句的应用/" class="archive-article-date">
-  	<time datetime="2018-07-12T00:50:32.214Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/12/if嵌套语句的应用/">If use case</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/09/hello-world/" class="archive-article-date">
-  	<time datetime="2018-07-09T12:19:27.669Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/09/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -351,8 +328,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
