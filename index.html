@@ -34,6 +34,11 @@
   
 
 </head>
+$ <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+$ </script>
+$ <span id="busuanzi_container_site_pv">
+$     ��վ�ܷ�����<span id="busuanzi_value_site_pv"></span>��
+$ </span>
 
 <body>
   <div id="container" q-class="show:isCtnShow">
@@ -152,6 +157,72 @@
           </div>
           <div id="js-content" class="content-ll">
             
+  
+    <article id="post-输出三角形的方法" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/16/输出三角形的方法/">输出三角形的方法</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/16/输出三角形的方法/" class="archive-article-date">
+  	<time datetime="2018-07-16T09:06:07.121Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">k=4</span><br><span class="line">for i in range(1,6,2):</span><br><span class="line">    k-=1</span><br><span class="line">    print(&apos;%&#123;0&#125;s&apos;.format(k)%&apos; &apos;,end=&apos;&apos;)</span><br><span class="line">    for j in range(0,i):</span><br><span class="line">        print(&apos;*&apos;,end=&apos;&apos;)</span><br><span class="line">    print(&apos;\r&apos;)</span><br></pre></td></tr></table></figure>
+<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">for i in range(1,4):</span><br><span class="line">    print(&apos;%&#123;0&#125;s&apos;.format(4-i)%&apos;&apos;,end=&apos;&apos;)</span><br><span class="line">    print(&apos;*&apos;*(2*i-1))</span><br></pre></td></tr></table></figure>
+<h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">for i in range(1,4):</span><br><span class="line">    print(&apos;%&#123;0&#125;s&apos;.format(i+2)%(&apos;*&apos;*(2*i-1)))</span><br></pre></td></tr></table></figure>
+<h2 id="方法四"><a href="#方法四" class="headerlink" title="方法四"></a>方法四</h2><p>for i in range(1,4):<br>    for j in range(0,3-i):<br>        print(‘%s’%’ ‘,end=’’)<br>    for k in range(0,2<em>i-1):<br>        print(‘%s’%’</em>‘,end=’’)<br>    print(‘\r’)</p>
+<h2 id="方法五"><a href="#方法五" class="headerlink" title="方法五"></a>方法五</h2>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/16/输出三角形的方法/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
   
     <article id="post-列表" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
@@ -750,6 +821,9 @@
     </div>
   </div>
 </footer>
+$ <span id="busuanzi_container_page_pv">
+$   �������Ķ���<span id="busuanzi_value_page_pv"></span>��
+$ </span>
     </div>
     <script>
 	var yiliaConfig = {
