@@ -153,6 +153,68 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-数组" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/16/数组/">列表</a>
+    </h1>
+  
+
+        
+        <a href="/2018/07/16/数组/" class="archive-article-date">
+  	<time datetime="2018-07-16T02:46:39.427Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line">1.列表的声明与赋值</span><br><span class="line">list1=list()</span><br><span class="line">list2=[1,2,3]</span><br><span class="line">2.列表的遍历</span><br><span class="line">通过for循环遍历列表，例如：</span><br><span class="line">直接遍历：</span><br><span class="line">for i in list:</span><br><span class="line">    print(i)</span><br><span class="line">通过元素下表遍历：</span><br><span class="line">list=[1,2,3]</span><br><span class="line">for i in range(len(list)):</span><br><span class="line">    print(list[i])</span><br><span class="line">输出方式</span><br><span class="line">print(list)</span><br><span class="line">3.列表中元素的获取</span><br><span class="line">通过元素下标直接获取，例如：</span><br><span class="line">list=[1,2,3]</span><br><span class="line">print(list[2])</span><br><span class="line">#result=3</span><br><span class="line">-------</span><br><span class="line">切片法，例如</span><br><span class="line">list=[1,2,3]</span><br><span class="line">print(list[0:3:1])</span><br><span class="line">#result [1,2,3]</span><br><span class="line">颠倒输出，例如</span><br><span class="line">print(list=[-1:0:-1])</span><br><span class="line">#result [3,2,1]</span><br><span class="line">通过index()函数查找元素，返回结果为元素的下标,但如果未找到元素，返回结果错误。</span><br><span class="line">例如：</span><br><span class="line">list=[1,1,2,3]</span><br><span class="line">print(list.index(1,1))</span><br><span class="line">#result 1</span><br><span class="line">通过关键字in判断元素是否在列表中，并返回元素的下标。</span><br><span class="line">例如：</span><br><span class="line">list=[1,2,3]</span><br><span class="line">i=2</span><br><span class="line">for i in range(len(list)):</span><br><span class="line">    if i in list:</span><br><span class="line">        print(i)</span><br><span class="line">#result 1</span><br><span class="line">4.对列表的操作</span><br><span class="line">修改列表中的元素：</span><br><span class="line">list=[1,2,3]</span><br><span class="line">list[1]=1</span><br><span class="line">print(list)</span><br><span class="line">#result [1,1,3]</span><br><span class="line">------</span><br><span class="line">+与*运算符</span><br><span class="line">在列表中我们使用+运算符，可以将两个列表进行连接，生成一个新的列表。</span><br><span class="line">比如：list1 = [1,2,3]  list2 = [4,5,6]  list1+list2=&gt;[1,2,3,4,5,6]</span><br><span class="line">使用*运算符，可以将目标列表的内容重复N次，并生成一个新的列表。</span><br><span class="line">比如：list1 = [1,2,3] list1*2=&gt;[1,2,3,1,2,3]</span><br><span class="line">5.对列表的函数操作</span><br><span class="line">求最大值或最小值：</span><br><span class="line">list=[1,2,3]</span><br><span class="line">max(list)=3</span><br><span class="line">min(list)=1</span><br><span class="line">对整型列表元素进行求和操作：</span><br><span class="line">sum(list)=&gt;6</span><br><span class="line">对列表进行排序：用list.sort()函数进行排序，直接在原列表中进行排序，但是不将结果返回,排序的元素必须为同一种元素。</span><br><span class="line">list=[2,3,1]</span><br><span class="line">list.sort()</span><br><span class="line">print(list)</span><br><span class="line">对列表进行颠倒</span><br><span class="line">list.sort(reverse=true)</span><br><span class="line">如果需要返回结果，可以使用sorted(list)</span><br><span class="line">计数函数，返回值为元素出现的次数</span><br><span class="line">list.count(元素)</span><br><span class="line">list.cont(2)=&gt;1</span><br><span class="line">将字符串，根据指定的分隔符，转换为列表</span><br><span class="line">list = string.split(&apos; &apos;),例如：</span><br><span class="line">string=&apos;1,2,3&apos;</span><br><span class="line">list=string.split(&apos;,&apos;)=&gt;[1,2,3]</span><br><span class="line">将列表转为字符串：&apos;&apos;.join(list),列表中的所有元素必须是字符串类型</span><br><span class="line">例如：</span><br><span class="line">list=[&apos;1&apos;,&apos;2&apos;,&apos;3&apos;]</span><br><span class="line">string=&apos; &apos;.join(list)</span><br><span class="line">print(string)</span><br><span class="line">#result &apos;1 2 3&apos;</span><br><span class="line">------------------------</span><br><span class="line">列表比较运算符操作</span><br><span class="line">相当于列表使用普通的比较运算符</span><br><span class="line">import operator</span><br><span class="line">operator.ge()         大于等于   &gt;=</span><br><span class="line">operator.gt()         大于       &gt;</span><br><span class="line">operator.eq()       等于         ==</span><br><span class="line">operator.ne()        不等于      !=</span><br><span class="line">operator.le()           小于等于 &lt;=</span><br><span class="line">operator.lt()          小于      &lt;</span><br><span class="line">格式：operator.ge(列表1,列表2)</span><br><span class="line">返回值：如果符合条件，返回True，反之，返回False</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/07/16/数组/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-python笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
