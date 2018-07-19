@@ -6,16 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2018/7 | ľ����</title>
+  <title>高级特性 | ľ����</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="Python�����桢Web����">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ľ����">
-<meta property="og:url" content="http://yoursite.com/archives/2018/07/index.html">
+  <meta name="description" content="main123456789101112131415161718192021222324252627282930313233343536373839404142434445464748491.range()它不会自动产生整数序列，需要结合其它方式去调用2.列表推导生成式子格式：[表达式或函数  for x in 序列]3.迭代器概念：迭代器访问元素，是从第一个元素开始，依次访问后续元素直到结束。其中">
+<meta name="keywords" content="Python�����桢Web����">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高级特性">
+<meta property="og:url" content="http://yoursite.com/2018/07/19/高级特性/index.html">
 <meta property="og:site_name" content="ľ����">
+<meta property="og:description" content="main123456789101112131415161718192021222324252627282930313233343536373839404142434445464748491.range()它不会自动产生整数序列，需要结合其它方式去调用2.列表推导生成式子格式：[表达式或函数  for x in 序列]3.迭代器概念：迭代器访问元素，是从第一个元素开始，依次访问后续元素直到结束。其中">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-19T11:41:03.362Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ľ����">
+<meta name="twitter:title" content="高级特性">
+<meta name="twitter:description" content="main123456789101112131415161718192021222324252627282930313233343536373839404142434445464748491.range()它不会自动产生整数序列，需要结合其它方式去调用2.列表推导生成式子格式：[表达式或函数  for x in 序列]3.迭代器概念：迭代器访问元素，是从第一个元素开始，依次访问后续元素直到结束。其中">
   
     <link rel="alternative" href="/atom.xml" title="ľ����" type="application/atom+xml">
   
@@ -156,295 +160,154 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-高级特性" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      高级特性
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/19/高级特性/" class="archive-article-date">
+
+        
+        <a href="/2018/07/19/高级特性/" class="archive-article-date">
   	<time datetime="2018-07-19T11:32:27.050Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-19</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/19/高级特性/">高级特性</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="main"><a href="#main" class="headerlink" title="main"></a>main</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line">1.range()</span><br><span class="line">它不会自动产生整数序列，需要结合其它方式去调用</span><br><span class="line">2.列表推导生成式子</span><br><span class="line">格式：[表达式或函数  for x in 序列]</span><br><span class="line">3.迭代器</span><br><span class="line">概念：迭代器访问元素，是从第一个元素开始，依次访问后续元素直到结束。其中迭代器只能向前不能回退。其包含两个方法iter()和next()。</span><br><span class="line">iter()用来创建一个迭代器，next()用来访问下一个元素。</span><br><span class="line">目前我们所学的字符串、列表、元组都可以创建迭代器，那么他们也是可迭代化的对象。</span><br><span class="line">迭代器两个步骤：</span><br><span class="line">1、当调用next()函数，会将迭代器当前位置状态进行改变</span><br><span class="line">2、会将下一个元素进行返回，迭代器具有延迟的效用。</span><br><span class="line">可迭代化（iterable）：表明相关的对象可以创建迭代器对象，同时他们自身都是可以进行for数据遍历的。我们可以使用isinstance()来判断对象是否为可迭代化</span><br><span class="line"></span><br><span class="line">from collections import Iterable</span><br><span class="line">string = &apos;hello&apos;</span><br><span class="line">print(isinstance(string, Iterable))  =&gt; True</span><br><span class="line">函数格式：isinstance(对象，类型)</span><br><span class="line">返回值：布尔值</span><br><span class="line">结果：如果指定的对象属于指定的类型，那么返回True，反之返回False</span><br><span class="line">enumerate()函数</span><br><span class="line">函数格式：enumerate(iterable)</span><br><span class="line">返回值：生成一个枚举对象</span><br><span class="line">例如：</span><br><span class="line">enum = enumberate([&apos;one&apos;,&apos;two&apos;,&apos;three&apos;])</span><br><span class="line">for i in enum:</span><br><span class="line">    print(i)</span><br><span class="line">    </span><br><span class="line">(0, &apos;one&apos;)</span><br><span class="line">(1, &apos;two&apos;)</span><br><span class="line">(2, &apos;three&apos;)</span><br><span class="line"></span><br><span class="line">for i,value in enum:</span><br><span class="line">    print(i, value)</span><br><span class="line">   </span><br><span class="line">0 one</span><br><span class="line">1 two</span><br><span class="line">2 three</span><br><span class="line">生成器</span><br><span class="line">1、创建方式</span><br><span class="line">第一种，使用列表推导式，将[]改为()，生成一个generator对象</span><br><span class="line">第二种，使用函数方式，采用yield关键字来实现</span><br><span class="line">2、使用</span><br><span class="line">生成器我们通常可以认为一种特殊的迭代器，但是它不需要像迭代器一样去实现__iter__,__next__方法。只需要使用yield关键字，该关键字可以在每次调用生成器函数时起到暂停作用，并将其值进行返回。同时还会记录当前运行值的状态。</span><br><span class="line"></span><br><span class="line">总结：迭代器和生成器</span><br><span class="line">1、容器是一系列的元素集合，str、list、set、dict对象都可以看作是容器，容器都可以进行迭代（即用在while或for循环），凡是这样的容器我们都称为可迭代化对象（Iterable）。</span><br><span class="line">2、可迭代化对象都实现了__iter__方法，该方法返回一个迭代器对象。</span><br><span class="line">3、迭代器都拥有一个状态字段，用于记录下次迭代返回值。它实现了__next__和__iter__方法，迭代器不会一次性把所有的元素都加载到内存中，而是在需要的时候才生成返回结果。</span><br><span class="line">4、生成器是一种特殊的迭代器，它的返回值不是通过return来返回的，而是通过yield来返回的。</span><br></pre></td></tr></table></figure>
+      
 
-        <div class="article-info info-on-right">
-          
-          
-
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2018/07/19/高级特性/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/18/集合/" class="archive-article-date">
-  	<time datetime="2018-07-18T08:09:15.428Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-18</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/07/18/集合/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">集合</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/18/集合/">集合</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/17/字典/" class="archive-article-date">
-  	<time datetime="2018-07-17T12:40:33.124Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-17</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/17/字典/">字典笔记</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/输出三角形的方法/" class="archive-article-date">
-  	<time datetime="2018-07-16T09:06:07.121Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/输出三角形的方法/">输出三角形的方法</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/列表/" class="archive-article-date">
-  	<time datetime="2018-07-16T02:46:39.427Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/列表/">列表</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/16/python笔记/" class="archive-article-date">
-  	<time datetime="2018-07-16T01:06:26.975Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/16/python笔记/">PYthon 字符串</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/14/关键字信息检测/" class="archive-article-date">
-  	<time datetime="2018-07-14T06:36:20.671Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-14</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/14/关键字信息检测/">关键字信息检测</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/冒泡排序法求最大值/" class="archive-article-date">
-  	<time datetime="2018-07-13T08:20:25.347Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/冒泡排序法求最大值/">冒泡法求最大值</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/输出1-100中所有的质数/" class="archive-article-date">
-  	<time datetime="2018-07-13T01:57:24.739Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/输出1-100中所有的质数/">输出1-00中所有的质数</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/07/13/查找0-100中某个数的个数/" class="archive-article-date">
-  	<time datetime="2018-07-13T01:04:58.061Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-07-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/07/13/查找0-100中某个数的个数/">查找0-100中某位数的数目</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
-    <nav id="page-nav">
-      <span class="page-number current">1</span><a class="page-number" href="/archives/2018/07/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/07/page/2/">Next &raquo;</a>
-    </nav>
   
 
 
@@ -471,8 +334,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
